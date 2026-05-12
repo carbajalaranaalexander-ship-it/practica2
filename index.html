@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Dinámica - Desarrollo Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ruleta Dinámica Interactiva</h1>
+        <p>Presiona SPACE, haz clic en la ruleta o usa el botón para girar</p>
+    </header>
+
+    <main>
+        <section class="contenedor-ruleta">
+            <div class="canvas-container">
+                <canvas id="ruletaCanvas" width="400" height="400"></canvas>
+                <div class="triangulo-indicador"></div>
+            </div>
+        </section>
+
+        <section class="contenedor-controles">
+            <div class="panel-control">
+                <h2>Panel de Control</h2>
+                
+                <div class="botones">
+                    <button id="btnIniciar" class="btn btn-primary">Iniciar Ruleta</button>
+                    <button id="btnReiniciar" class="btn btn-secondary">Reiniciar</button>
+                    <button id="btnPantallaCompleta" class="btn btn-info">Pantalla Completa (F)</button>
+                </div>
+
+                <div class="area-datos">
+                    <label for="textareaDatos">Elementos de la Ruleta:</label>
+                    <textarea id="textareaDatos" placeholder="Ingresa un elemento por línea...&#10;Ejemplo:&#10;Opción 1&#10;Opción 2&#10;Opción 3"></textarea>
+                </div>
+
+                <div class="resultado">
+                    <h3>Resultado:</h3>
+                    <div id="respuesta">Espera a que gire la ruleta...</div>
+                </div>
+
+                <div class="instrucciones">
+                    <h4>Atajos de Teclado:</h4>
+                    <ul>
+                        <li><strong>SPACE:</strong> Girar ruleta</li>
+                        <li><strong>S:</strong> Resaltar y ocultar último seleccionado</li>
+                        <li><strong>R:</strong> Reiniciar todo</li>
+                        <li><strong>F:</strong> Pantalla completa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Práctica de Desarrollo Web - HTML5, CSS3 y JavaScript puro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
